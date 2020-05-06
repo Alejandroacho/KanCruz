@@ -3,19 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Booking;
+use App\Room;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
 {
     public function index()
     {
+        $rooms = Room::all();
         $bookings = Booking::all();
-        return view ('booking.index', compact('bookings'));
+        return view ('booking.index', compact('bookings', 'rooms'));
     }
 
     public function create()
-    {
-        return view('booking.create')->with('success', 'Reserva creada satisfactoriamente');
+
+    {    $rooms = Room::all();
+        return view('booking.create', compact ('rooms'))->with('success', 'Reserva creada satisfactoriamente');
         ;
     }
 

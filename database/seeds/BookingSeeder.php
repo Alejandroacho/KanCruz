@@ -12,28 +12,56 @@ class BookingSeeder extends Seeder
     public function run()
     {
         App\Booking::create([
-            'client_name' => 'Bruna',
-            'client_lastname' => 'Gomes',
-            'client_document' => 'yc03940e',
-            'client_email' => 'brunagom3s@gmail.com',
-            'client_phone' => '943849302',
+            'name' => 'Bruna',
+            'lastname' => 'Gomes',
+            'document' => 'yc03940e',
+            'email' => 'sergi@gmail.com',
+            'phone' => '943849302',
             'checkin' => '2020/05/30',
             'checkout' => '2020/05/30',
             'breakfast'=> '0',
-            'pets'=> '0'
+            'pets'=> '0',
+            'rooms_id' => '1'
         ]);
-
 
         App\Booking::create([
-            'client_name' => 'Sergi',
-            'client_lastname' => 'Oliveres Amor',
-            'client_document' => '994390k',
-            'client_email' => 'sergi@gmail.com',
-            'client_phone' => '03490',
-            'checkin' => '2020/05/03',
-            'checkout' => '2020/05/16',
+            'name' => 'Sergi',
+            'lastname' => 'Oliveres',
+            'document' => 'yc03940e',
+            'email' => 'sergi@gmail.com',
+            'phone' => '943849302',
+            'checkin' => '2020/05/10',
+            'checkout' => '2020/05/15',
             'breakfast'=> '0',
-            'pets'=> '0'
+            'pets'=> '0',
+            'rooms_id' => '2'
         ]);
+
+        App\Booking::create([
+            'name' => 'Alejandro',
+            'lastname' => 'Acho',
+            'document' => 'yc03940e',
+            'email' => 'alejandro@gmail.com',
+            'phone' => '943849302',
+            'checkin' => '2020/05/20',
+            'checkout' => '2020/05/18',
+            'breakfast'=> '0',
+            'pets'=> '0',
+            'rooms_id' => '3'
+        ]);
+
+        App\Booking::create([
+            'name' => 'Sebastian',
+            'lastname' => 'Herrera',
+            'document' => 'yc03940e',
+            'email' => 'sebastian@gmail.com',
+            'phone' => '943849302',
+            'checkin' => '2020/05/22',
+            'checkout' => '2020/05/24',
+            'breakfast'=> '0',
+            'pets'=> '0',
+            'rooms_id' => '1'
+        ]);
+
     }
 }

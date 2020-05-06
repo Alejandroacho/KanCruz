@@ -21,28 +21,38 @@
 
                         <div class="form-group">
                             <label>Nombre</label>
-                                <input type="text" name="client_name" class="form-control"/>
+                                <input type="text" name="name" class="form-control"/>
                         </div>
 
                         <div class="form-group">
                             <label>Apellido</label>
-                                <input type="email" name="client_lastname" class="form-control"/>
+                                <input type="text" name="lastname" class="form-control"/>
                         </div>
 
                         <div class="form-group">
                             <label>Documento</label>
-                                <input type="text" name="client_document" class="form-control"/>
+                                <input type="text" name="document" class="form-control"/>
                         </div>
 
                         <div class="form-group">
                             <label>Email</label>
-                                <input type="email" name="client_email" class="form-control"/>
+                                <input type="email" name="email" class="form-control"/>
                         </div>
 
                         <div class="form-group">
                             <label>Telefono</label>
-                                <input type="phone" name="client_phone" class="form-control"/>
+                                <input type="phone" name="phone" class="form-control"/>
                         </div>
+
+                        <div class="form-group">
+                            <label for="rooms_id">Elige la habitacion</label>
+                            <select name="rooms_id" id="rooms_id" class="form-control">
+                            @foreach ($rooms as $room)
+                                    <option value="{{$room->id}}">{{$room->name}}</option>
+                                @endforeach
+                            
+                            </select>
+                    </div>
                         
                         <div class="form-group">
                             <label>Fecha de entrada</label>

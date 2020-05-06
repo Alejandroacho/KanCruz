@@ -11,12 +11,14 @@ class CreateBookingClientTable extends Migration
     {
         Schema::create('booking_client', function (Blueprint $table) {
             $table->id();
+            /* We might need this migration
+            
             $table->foreignId('booking_id');
             $table->foreignId('client_id');
             $table->timestamps();
 
             $table->foreign('booking_id')->references('id')->on('bookings');
-            $table->foreign('client_id')->references('id')->on('clients');
+            $table->foreign('client_id')->references('id')->on('clients');*/
         });
     }
 

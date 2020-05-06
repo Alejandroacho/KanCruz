@@ -11,14 +11,18 @@ class CreateBookingsTable extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
-            $table->string('client_name');
-            $table->string('client_dni');
-            $table->string('client_email');
-            $table->string('client_phone');
+            $table->string('name');
+            $table->string('lastname');
+            $table->string('document');
+            $table->string('email');
+            $table->string('phone');
             $table->date('checkin');
             $table->date('checkout');
             $table->boolean('breakfast')->default(0);
             $table->boolean('pets')->default(0);
+            $table->foreignId('rooms_id');
+            $table->foreign('rooms_id')->references('id')->on('rooms');
+
             //$table->integer('pets_number')->nullable();
             $table->timestamps();
         });

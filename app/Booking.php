@@ -9,9 +9,9 @@ class Booking extends Model
     protected $guarded = ['id', 'timestamps'];
 
 
-    public function clients()
+    public function rooms()
     {
-        return $this->belongsToMany(Client::class);
+        return $this->hasMany(Room::class);
     }
 
 

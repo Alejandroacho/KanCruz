@@ -12,7 +12,6 @@
 
         </div>
     @endif
-    <a href="{{route('booking.create')}}" class="btn btn-primary">Haz una Reserva</a>
 </div>
 
 
@@ -20,20 +19,20 @@
     <table class="table">
         <thead class="thead-dark">
           <tr>
-                <th>Reserva</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Fecha de entrada</th>
-                <th>Fecha de salida</th>
-                <th>Acción</th>
+                <th><h3>Reserva</h3></th>
+                <th><h3>Nombre</h3></th>
+                <th><h3>Apellido</h3></th>
+                <th><h3>Fecha de entrada</h3></th>
+                <th><h3>Fecha de salida</h3></th>
+                <th><h3>Accion<h3></th>
             </tr>
         </thead>
             @foreach($bookings as $booking)
-               <tbody></tbody>
-                    <tr>
+               <tbody>
+                    <tr class="text-center">
                     <th scope="row">{{$booking->id}}</th>
-                    <td>{{$booking->client_name}}</td>
-                    <td>{{$booking->client_lastname}}</td>
+                    <td>{{$booking->name}}</td>
+                    <td>{{$booking->lastname}}</td>
                     <td>{{$booking->checkin}}</td>
                     <td>{{$booking->checkout}}</td>
                     <td>
@@ -60,6 +59,9 @@
                 </tbody>
             @endforeach
     </table>
+    <div class="card-footer">
+            <a href="{{Route('booking.create')}}" class="btn btn-secondary">Añadir nueva reserva</a>
+        </div>
 </div>
 
 @endsection

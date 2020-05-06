@@ -41,15 +41,9 @@ class RoomController extends Controller
         return redirect (route('room.index'));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Room  $room
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Room $room)
     {
         $room->delete();
-        return redirect (route('room.index'));
+        return redirect (route('room.index'))->with('success', 'Habitación eliminada satisfactoriamente');;
     }
 }
