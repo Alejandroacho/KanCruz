@@ -1,1 +1,1 @@
-Stranger strings wiss you a nice day :)
+Stranger strings wish you a nice day :)
