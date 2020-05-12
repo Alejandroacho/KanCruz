@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/sample', function () {
+    return view('sample');
+});
+
+Route::get('/trial', function () {
+    return view('trial');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 
 Route::resource('booking', 'BookingController');
 Route::resource('client', 'ClientController');
