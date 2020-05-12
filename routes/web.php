@@ -25,6 +25,18 @@ Route::get('/trial', function () {
     return view('trial');
 });
 
+Route::get('/room', function () {
+    return view('room');
+});
+
+Route::get('/rooms', function () {
+    return view('rooms');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
