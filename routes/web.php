@@ -17,17 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sample', function () {
-    return view('sample');
-});
 
 Route::get('/trial', function () {
     return view('trial');
 });
 
-Route::get('/room', function () {
-    return view('room');
-});
 
 Route::get('/rooms', function () {
     return view('rooms');
@@ -40,6 +34,11 @@ Route::get('/contact', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/habitacion', function () {
+    return view('habitacion');
+});
+
 
 
 Route::resource('booking', 'BookingController');

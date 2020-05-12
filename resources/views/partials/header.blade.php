@@ -126,7 +126,7 @@
         </ul>
       </div>
       <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
-      <span class="flaticon-lupa"></span></span>
+      <span class="fas fa-search"></span></span>
 
       </button>
     </div>

@@ -62,8 +62,7 @@
                       <span class="price-a">€ 85.00 p/n</span>
                     </div>
                     <a href="property-single.html" class="link-a">Click para ver más
-                      <span class="ion-ios-arrow-forward"></span>
-                    </a>
+                      <span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span>                    </a>
                   </div>
                   <div class="card-footer-a">
                     <ul class="card-info d-flex justify-content-around">
@@ -106,7 +105,7 @@
                       <span class="price-a">€ 85.00 p/n</span>
                     </div>
                     <a href="property-single.html" class="link-a">Click para ver más
-                      <span class="ion-ios-arrow-forward"></span>
+                      <span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span>
                     </a>
                   </div>
                   <div class="card-footer-a">
@@ -151,7 +150,7 @@
                       <span class="price-a">€ 85.00 p/n</span>
                     </div>
                     <a href="property-single.html" class="link-a">Click para ver más
-                      <span class="ion-ios-arrow-forward"></span>
+                      <span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span> 
                     </a>
                   </div>
                   <div class="card-footer-a">

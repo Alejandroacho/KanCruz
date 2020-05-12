@@ -25,11 +25,14 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-  <link href="{{ asset('fonts/flaticon.css') }}" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
 
-  
-  
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   
 </head>
 
@@ -161,8 +164,7 @@
         </ul>
       </div>
       <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
-      <span class="flaticon-lupa"></span></span>
-
+      <i class="fas fa-search"></i>
       </button>
     </div>
   </nav><!-- End Header/Navbar -->
@@ -321,7 +323,7 @@
               </div>
               <div class="card-footer-c">
                 <a href="#" class="link-c link-icon">Read more
-                  <span class="ion-ios-arrow-forward"></span>
+                  <span class="iconify" data-icon="ant-design:left-outlined" data-inline="false"><span>
                 </a>
               </div>
             </div>
@@ -353,7 +355,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6">
                   <div class="testimonial-ico">
-                    <span class="ion-ios-quote"></span>
+                  <span class="iconify" data-icon="ion-ios-quote"></span>
                   </div>
                   <div class="testimonials-content">
                     <p class="testimonial-text">
@@ -378,7 +380,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6">
                   <div class="testimonial-ico">
-                    <span class="ion-ios-quote"></span>
+                    <span class="iconify" data-icon="ion-ios-quote"></span>
                   </div>
                   <div class="testimonials-content">
                     <p class="testimonial-text">
@@ -442,15 +444,15 @@
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-              Parc Natural del Montseny Allotjament Rural
+                <span class="iconify" data-icon="ion-ios-pin"></span> Parc Natural del Montseny Allotjament Rural
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Telefono .</span> +34 607304498 </li>
+                  <span class="fas fa-phone"></span> +34 607304498 </li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> masiacancruz@gmail.com</li>
+                  <span class="fas fa-envelope"></span> masiacancruz@gmail.com</li>
               </ul>
             </div>
           </div>

@@ -16,10 +16,10 @@
         <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html">Pagina Principal</a>
+              <a href="{{('/trial')}}">Inicio</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-              Contact
+              Contacto
             </li>
           </ol>
         </nav>
@@ -85,25 +85,26 @@
           <div class="col-md-5 section-md-t3">
             <div class="icon-box section-b2">
               <div class="icon-box-icon">
-                <span class="ion-ios-paper-plane"></span>
+                <span class="iconify" data-icon="ion-ios-paper-plane"></span>
               </div>
               <div class="icon-box-content table-cell">
                 <div class="icon-box-title">
                   <h4 class="icon-title">Contacta</h4>
                 </div>
                 <div class="icon-box-content">
-                  <p class="mb-1">Email.
+                  <p class="mb-1">Email .
                     <span class="color-a">cancruz@example.com</span>
                   </p>
-                  <p class="mb-1">Phone.
-                    <span class="color-a">+54 356 945234</span>
+                
+                  <p class="mb-1"> Telefono .
+                    <span class=" color-a">+54 356 945234</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="icon-box section-b2">
               <div class="icon-box-icon">
-                <span class="ion-ios-pin"></span>
+                <span class="iconify" data-icon="ion-ios-pin"></span>
               </div>
               <div class="icon-box-content table-cell">
                 <div class="icon-box-title">
@@ -119,11 +120,11 @@
             </div>
             <div class="icon-box">
               <div class="icon-box-icon">
-                <span class="ion-ios-redo"></span>
+                <span class=iconify data-icon="ion-ios-redo"></span>
               </div>
               <div class="icon-box-content table-cell">
                 <div class="icon-box-title">
-                  <h4 class="icon-title">Redes Soiales</h4>
+                  <h4 class="icon-title">Redes Sociales</h4>
                 </div>
                 <div class="icon-box-content">
                   <div class="socials-footer">

@@ -41,15 +41,16 @@
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-              Parc Natural del Montseny Allotjament Rural
+
+              <span class="iconify" data-icon="ion-ios-pin"></span> Parc Natural del Montseny Allotjament Rural
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Telefono .</span> +34 607304498 </li>
+                  <span class="fas fa-phone"></span> +54 356 945234 </li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> masiacancruz@gmail.com</li>
+                  <span class="fas fa-envelope"></span> cancruz@example.com</li>
               </ul>
             </div>
           </div>
