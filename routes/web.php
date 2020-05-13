@@ -39,6 +39,18 @@ Route::get('/habitacion', function () {
     return view('habitacion');
 });
 
+Route::get('/formulario', function () {
+    return view('formulario');
+});
+
+Route::get('aboutus', function () {
+    return view('aboutus');
+});
+
+Route::get('experiencias', function () {
+    return view('experiencias');
+});
+
 
 
 Route::resource('booking', 'BookingController');

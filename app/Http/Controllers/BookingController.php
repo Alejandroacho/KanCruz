@@ -16,10 +16,9 @@ class BookingController extends Controller
     }
 
     public function create()
-
-    {    $rooms = Room::all();
-        return view('booking.create', compact ('rooms'))->with('success', 'Reserva creada satisfactoriamente');
-        ;
+    {    
+        $rooms = Room::all();
+        return view('booking.create', compact('rooms'))->with('success', 'Reserva creada satisfactoriamente');
     }
 
     public function store(Request $request)

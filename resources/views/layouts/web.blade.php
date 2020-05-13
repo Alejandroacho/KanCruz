@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Can Cruz</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+    <title>{{ config('app.name', 'Can Cruz') }}</title>
+    
+    <script src="{{ asset('js/app.js') }}" defer></script>
+  
     @include('partials.links')
 
 </head>

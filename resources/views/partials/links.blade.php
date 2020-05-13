@@ -15,7 +15,7 @@
   <!-- Template Main CSS File -->
   <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
-  <!-- Font Awesome -->
+  <!-- Font awesome & Iconify -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
   <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>

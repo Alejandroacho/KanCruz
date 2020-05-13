@@ -147,7 +147,7 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="{{('/trial')}}">Home</a>
+            <a class="nav-link active" href="{{('/trial')}}">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('booking.create')}}">Reservas</a>
@@ -156,7 +156,7 @@
             <a class="nav-link" href="{{('/rooms')}}">Habitaciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog-grid.html">Experiencias</a>
+            <a class="nav-link" href="{{('/experiencias')}}">Experiencias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{('/contact')}}">Contacto</a>
@@ -227,7 +227,7 @@
                   <div class="intro-body">
                     <p class="intro-title-top">Cocina y huerto ecológico
                     <h1 class="intro-title mb-4">
-                    Concina <span class="color-b">ecológica </span>:
+                    Cocina <span class="color-b">ecológica </span>:
                     <br>De la <span class="color-b">huerta </span> al plato</h1>
                     <p class="intro-subtitle intro-price">
                       <a href="{{route('booking.create')}}"><span class="price-a">Reserva</span></a>
@@ -243,94 +243,6 @@
   </div><!-- End Intro Section -->
 
   <main id="main">
-
-    <!-- ======= Services Section ======= -->
-    <section class="section-services section-t8">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Nuestros Servicios</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                </div>
-                <div class="card-title-c align-self-center">
-                  <h2 class="title-c"></h2>
-                </div>
-              </div>
-              <div class="card-body-c">
-                <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
-                  <span class="ion-ios-arrow-forward"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                <i class="flaticon-growth"></i>
-                </div>
-                <div class="card-title-c align-self-center">
-                  <h2 class="title-c"></h2>
-                </div>
-              </div>
-              <div class="card-body-c">
-                <p class="content-c">
-                  Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Mauris blandit
-                  aliquet elit, eget tincidunt
-                  nibh pulvinar a.
-                </p>
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
-                  <span class="ion-ios-arrow-forward"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                  <span class="fa fa-home"></span>
-                </div>
-                <div class="card-title-c align-self-center">
-                  <h2 class="title-c"></h2>
-                </div>
-              </div>
-              <div class="card-body-c">
-                <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
-                  <span class="iconify" data-icon="ant-design:left-outlined" data-inline="false"><span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
     
     <!-- ======= Testimonials Section ======= -->
     <section class="section-testimonials section-t8 nav-arrow-a">
@@ -410,6 +322,11 @@
             <div class="w-header-a">
               <h3 class="w-title-a text-brand">Quienes somos</h3>
             </div>
+            <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <a href="{{('/aboutus')}}">Sobre Nosotros</a>
+                </li>
+              </ul>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
               La masía de Can Plans es una gran nave principal levantada sobre una gran piedra en la planta baja, con el suelo nivelado con losas del propio lugar.

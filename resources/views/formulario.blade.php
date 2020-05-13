@@ -1,11 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.web')
+
 @section('content')
-    <div class="container">
+<div class="container">
         <div class="card">
             <form action="{{Route('booking.store')}}" method="POST">
                 @csrf
                 
-                <div class="card text-white bg-dark mb-3">
+                <div class="card text-black mb-3">
 
                     <div class="card-header">
                         <label>Haz una reserva</label>
@@ -46,9 +47,7 @@
                         <div class="form-group">
                             <label for="rooms_id">Elige la habitacion</label>
                             <select name="rooms_id" id="rooms_id" class="form-control">
-                            @foreach ($rooms as $room)
-                                    <option value="{{$room->id}}">{{$room->name}}</option>
-                                @endforeach
+                                    <option value=""></option>
                             
                             </select>
                         </div>

@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-md-12 col-lg-8">
         <div class="title-single-box">
-          <h1 class="title-single">No seas timid@... Contacta con nosotros!</h1>
+          <h1 class="title-single">No seas timid@... Escribenos!</h1>
           <span class="color-text-a">Estamos aquí para ayudar. Si tienes alguna duda, pregunta, sugerencia o crítica no dudes en mandarnos un mail... Queremos brindarte el mejor servicio posible</span>
         </div>
       </div>
@@ -40,48 +40,48 @@
         </div>
       </div>
       <div class="col-sm-12 section-t8">
-        <div class="row">
-          <div class="col-md-7">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 mb-3"></div>
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Escribe tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                    <div class="validate"></div>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="En qué email contactamos?" data-rule="email" data-msg="Please enter a valid email">
-                    <div class="validate"></div>
-                  </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <div class="form-group">
-                    <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Sobre que quieres hablarnos" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-                    <div class="validate"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea name="message" class="form-control" name="message" cols="45" rows="8" data-rule="required" data-msg="Type something" placeholder="Escribe aquí tu mensaje... pero no seas demasiado formal: Somos gente de campo"></textarea>
-                    <div class="validate"></div>
-                  </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <div class="mb-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
-                  </div>
-                </div>
+            <div class="row">
+              <div class="col-md-7">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Escribe tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <div class="validate"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="En qué email contactamos?" data-rule="email" data-msg="Please enter a valid email">
+                        <div class="validate"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                        <div class="validate"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" data-rule="required" data-msg="Please write something for us" placeholder="Escribe aquí tu mensaje.. pero no seas demasiado formal: Somos gente de campo"></textarea>
+                        <div class="validate"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                      </div>
+                    </div>
 
-                <div class="col-md-12 text-center">
-                  <button type="submit" class="btn btn-a">Enviar</button>
-                </div>
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="btn btn-a">Enviar mensaje</button>
+                    </div>
+                  </div>
+                </form>
               </div>
-            </form>
-          </div>
           <div class="col-md-5 section-md-t3">
             <div class="icon-box section-b2">
               <div class="icon-box-icon">

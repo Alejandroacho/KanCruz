@@ -118,7 +118,7 @@
             <a class="nav-link" href="{{('/rooms')}}">Habitaciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog-grid.html">Experiencias</a>
+            <a class="nav-link" href="{{'/experiencias'}}">Experiencias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{('/contact')}}">Contacto</a>
