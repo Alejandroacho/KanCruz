@@ -51,6 +51,11 @@ Route::get('booking/reserva', function () {
     return view('booking/reserva');
 });
 
+Route::get('calendar', function () {
+    return view('calendar');
+});
+
+
 
 
 Route::resource('booking', 'BookingController');
@@ -63,8 +68,3 @@ Auth::routes();
 
 Route::get('/', 'Home\HomeController@index')->name('home.index');
 Route::get('/Panel', 'Panel\PanelController@index')->name('panel.index');
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

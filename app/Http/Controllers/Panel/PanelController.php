@@ -27,4 +27,5 @@ class PanelController extends Controller
         $user = Auth()->User();
         return view('panel.index', compact('user'));
     }
+
 }
