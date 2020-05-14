@@ -64,3 +64,7 @@ Auth::routes();
 Route::get('/', 'Home\HomeController@index')->name('home.index');
 Route::get('/Panel', 'Panel\PanelController@index')->name('panel.index');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
