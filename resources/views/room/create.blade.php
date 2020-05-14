@@ -1,6 +1,6 @@
-@extends('layouts.web')
+@extends('layouts.app')
 
-@section('content')
+<!--@section('content')
     <div class="container">
         <div class="card">
             <div class="card-header">

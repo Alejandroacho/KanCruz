@@ -39,17 +39,18 @@
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             
                         <div class="btn-group mr-2" role="group" aria-label="First group">
-                                <a href="{{route('booking.show', $booking->id)}}" class="btn btn-secondary">Detalles</a>
+                                <a href="{{route('booking.show', $booking->id)}}" class="fas fa-info-circle"></a>
                             </div>
                             
                             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                                <a href="{{route('booking.edit', $booking->id)}}" class="btn btn-warning">Editar</a>
+                                <a href="{{route('booking.edit', $booking->id)}}" class="fas fa-edit"></a>
                             </div>
 
                             <div class="btn-group mr-2" role="group" aria-label="Third group">
                                 <form action="{{route('booking.destroy', $booking->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
+                                    <i class="fas fa-edit"></i>
                                     <input type="submit" value="Borrar" class="btn btn-danger">
                                 </form>
                             </div>

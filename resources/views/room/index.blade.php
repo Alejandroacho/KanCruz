@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.web')
 
 @section('content')
 
@@ -46,7 +46,7 @@
                         </td>  
 
                         <td>
-                            <a style="color:white" href="{{Route('room.edit',$room->id)}}" class="btn btn-info" role="button">Editar</a>
+                            <a style="color:black" href="{{Route('room.edit',$room->id)}}" class="fas fa-edit" role="button"></a>
                         </td>
 
                         <td>

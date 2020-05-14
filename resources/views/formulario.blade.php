@@ -72,7 +72,15 @@
                             <label>Mascotas</label>
                                 <input type="checkbox" name="pets" id="pets" value="1" class="form-control"/>
                         </div>
-                        
+                        <div class="form-group">
+                            <label for="rooms_id">Elige la habitacion</label>
+                            <select name="rooms_id" id="rooms_id" class="form-control">
+                            @foreach ($rooms as $room)
+                                    <option value="{{$room->id}}">{{$room->name}}</option>
+                                @endforeach
+                            
+                            </select>
+                        </div>
                         <!--
                         <div class="input-group">
                             <div class="input-group-prepend">

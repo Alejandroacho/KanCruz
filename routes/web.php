@@ -31,10 +31,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
-
 Route::get('/habitacion', function () {
     return view('habitacion');
 });
@@ -51,6 +47,10 @@ Route::get('experiencias', function () {
     return view('experiencias');
 });
 
+Route::get('booking/reserva', function () {
+    return view('booking/reserva');
+});
+
 
 
 Route::resource('booking', 'BookingController');
@@ -61,4 +61,6 @@ Route::resource('room', 'RoomController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'Home\HomeController@index')->name('home.index');
+Route::get('/Panel', 'Panel\PanelController@index')->name('panel.index');
+
