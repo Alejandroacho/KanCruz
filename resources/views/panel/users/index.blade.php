@@ -16,23 +16,13 @@
         <section class="content-header">
 
           <h1>
-            Panel de control
-
-            @if(isset($urlActual))
-              <small>{{$urlActual}}</small>
-            @else
-              <small>Pagina principal</small>
-            @endif
+            Pagina principal
+            <small>Panel de control</small>
           </h1>
 
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-            @if(isset($urlActual))
-              <li class="active">{{$urlActual}}</li>
-            @else
-              <li class="active">Pagina principal</li>
-            @endif
-    
+            <li class="active">Pagina principal</li>
           </ol>
 
           

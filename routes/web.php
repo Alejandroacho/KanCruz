@@ -67,4 +67,10 @@ Route::resource('room', 'RoomController');
 Auth::routes();
 
 Route::get('/', 'Home\HomeController@index')->name('home.index');
+
 Route::get('/Panel', 'Panel\PanelController@index')->name('panel.index');
+Route::get('/Panel/users', 'Panel\PanelController@view_users')->name('panel.users.index');
+Route::get('/Panel/room', 'Panel\PanelController@view_room')->name('panel.room.index');
+Route::get('/Panel/booking', 'Panel\PanelController@view_booking')->name('panel.booking.index');
+
+

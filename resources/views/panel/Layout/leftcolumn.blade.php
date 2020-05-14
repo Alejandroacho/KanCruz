@@ -38,8 +38,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="{{route('panel.index')}}"><i class="fa fa-circle-o"></i> Panel principal</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li class="active"><a href="{{route('panel.index')}}"><i class="fa fa-home"></i> Inicio</a></li>
+            <li><a href="{{route('panel.users.index')}}"><i class="fa fa-users"></i> Usuarios</a></li>
+            <li><a href="{{route('panel.booking.index')}}"><i class="fa fa-book"></i> Reservas</a></li>
+            <li><a href="{{route('panel.room.index')}}"><i class="fa fa-bed"></i> Habitaciones</a></li>
+
           </ul>
         </li>
         <li class="treeview">
