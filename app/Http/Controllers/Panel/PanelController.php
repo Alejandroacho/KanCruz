@@ -60,7 +60,7 @@ class PanelController extends Controller
         $exploder = explode('/', $uri);
 
         $uriActual = $exploder[1];
-        return view('panel.room.index', compact('user', 'uriActual', 'rooms'));
+        return view('room.index', compact('user', 'uriActual', 'rooms'));
     }
 
     public function view_booking()
@@ -74,7 +74,7 @@ class PanelController extends Controller
         $exploder = explode('/', $uri);
 
         $uriActual = $exploder[1];
-        return view('panel.booking.index', compact('user', 'uriActual', 'bookings'));
+        return view('booking.index', compact('user', 'uriActual', 'bookings'));
     }
 
 }

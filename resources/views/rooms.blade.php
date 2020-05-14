@@ -61,7 +61,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">€ 85.00 p/n</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click para ver más
+                    <a href="{{('/habitacion')}}" class="link-a">Click para ver más
                       <span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span>                    </a>
                   </div>
                   <div class="card-footer-a">

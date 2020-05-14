@@ -18,11 +18,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/trial', function () {
-    return view('trial');
-});
-
-
 Route::get('/rooms', function () {
     return view('rooms');
 });
@@ -35,9 +30,6 @@ Route::get('/habitacion', function () {
     return view('habitacion');
 });
 
-Route::get('/formulario', function () {
-    return view('formulario');
-});
 
 Route::get('aboutus', function () {
     return view('aboutus');
@@ -45,10 +37,6 @@ Route::get('aboutus', function () {
 
 Route::get('experiencias', function () {
     return view('experiencias');
-});
-
-Route::get('booking/reserva', function () {
-    return view('booking/reserva');
 });
 
 Route::get('calendar', function () {
@@ -61,6 +49,8 @@ Route::get('calendar', function () {
 Route::resource('booking', 'BookingController');
 Route::resource('client', 'ClientController');
 Route::resource('room', 'RoomController');
+Route::resource('trial', 'TrialController');
+
 
 
 
@@ -70,7 +60,8 @@ Route::get('/', 'Home\HomeController@index')->name('home.index');
 
 Route::get('/Panel', 'Panel\PanelController@index')->name('panel.index');
 Route::get('/Panel/users', 'Panel\PanelController@view_users')->name('panel.users.index');
-Route::get('/Panel/room', 'Panel\PanelController@view_room')->name('panel.room.index');
-Route::get('/Panel/booking', 'Panel\PanelController@view_booking')->name('panel.booking.index');
+Route::get('/Panel/room', 'Panel\PanelController@view_room')->name('room.index');
+Route::get('/Panel/booking', 'Panel\PanelController@view_booking')->name('booking.index');
+
 
 

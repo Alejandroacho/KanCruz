@@ -18,7 +18,7 @@
             <a class="nav-link active" href="{{('/trial')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('booking.create')}}">Reservas</a>
+            <a class="nav-link" href="{{route('trial.create')}}">Reservas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{('/rooms')}}">Habitaciones</a>

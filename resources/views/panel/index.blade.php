@@ -32,7 +32,7 @@
           <div class="icon">
             <i class="ion ion-stats-bars"></i>
           </div>
-          <a href="{{route('panel.booking.index')}}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="{{route('booking.index')}}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
 
@@ -48,7 +48,7 @@
           <div class="icon">
             <i class="fa fa-bed"></i>
           </div>
-          <a href="{{route('panel.room.index')}}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="{{route('room.index')}}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
     </div>

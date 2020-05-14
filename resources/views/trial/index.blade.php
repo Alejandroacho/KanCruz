@@ -21,7 +21,7 @@
             <a class="nav-link active" href="{{('/trial')}}">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('booking.create')}}">Reservas</a>
+            <a class="nav-link" href="{{route('trial.create')}}">Reservas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{('/rooms')}}">Habitaciones</a>
@@ -34,9 +34,6 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
-      <i class="fas fa-search"></i>
-      </button>
     </div>
   </nav><!-- End Header/Navbar -->
 

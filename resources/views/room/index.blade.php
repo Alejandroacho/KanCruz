@@ -59,7 +59,9 @@
                                     @endif
                                 </td>
                                 <td>
-                                
+
+                                    <a href="{{Route('room.show', $room->id)}}" class="btn btn-primary"><i class="fa fa-info"></i></a>
+
                                     <a style="color:black" href="{{Route('room.edit',$room->id)}}" class="btn btn-warning" role="button"><i class="fa fa-edit"></i></a>
 
                                     <a style="color:black" href="{{Route('room.edit',$room->id)}}" class="btn btn-danger" role="button"><i class="fa fa-trash"></i></a>

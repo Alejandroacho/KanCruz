@@ -17,7 +17,7 @@
 <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">Tabla de habitaciones</h3>
+                <h3 class="box-title">Tabla de Reservas</h3>
 
                 <div class="box-tools">
                     <div class="input-group input-group-sm" style="width: 150px;">

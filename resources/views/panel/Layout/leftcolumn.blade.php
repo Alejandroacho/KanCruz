@@ -9,7 +9,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>{{$user->name}}</p>
+          <p>Bruna</p>
           <!-- Status -->
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
@@ -40,8 +40,8 @@
           <ul class="treeview-menu">
             <li class="active"><a href="{{route('panel.index')}}"><i class="fa fa-home"></i> Inicio</a></li>
             <li><a href="{{route('panel.users.index')}}"><i class="fa fa-users"></i> Usuarios</a></li>
-            <li><a href="{{route('panel.booking.index')}}"><i class="fa fa-book"></i> Reservas</a></li>
-            <li><a href="{{route('panel.room.index')}}"><i class="fa fa-bed"></i> Habitaciones</a></li>
+            <li><a href="{{route('booking.index')}}"><i class="fa fa-book"></i> Reservas</a></li>
+            <li><a href="{{route('room.index')}}"><i class="fa fa-bed"></i> Habitaciones</a></li>
 
           </ul>
         </li>

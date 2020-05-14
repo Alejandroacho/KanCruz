@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Booking;
 use App\Room;
+use App\User;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -28,14 +29,16 @@ class BookingController extends Controller
     }
 
     public function show(Booking $booking)
-    {
-        return view('booking.show', compact ('booking'));
+    {   
+        $user = User::all();
+        return view('booking.show', compact ('booking', 'user'));
 
     }
 
     public function edit(Booking $booking)
     {   
-        return view('booking.edit', compact('booking'));
+        $rooms = Room::all();
+        return view('booking.edit', compact('booking', 'rooms'));
 
     }
 
