@@ -65,3 +65,7 @@ Route::get('/Panel/booking', 'Panel\PanelController@view_booking')->name('bookin
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
