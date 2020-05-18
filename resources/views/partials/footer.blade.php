@@ -7,11 +7,7 @@
             <div class="w-header-a">
               <h3 class="w-title-a text-brand">Quienes somos</h3>
             </div>
-            <ul class="list-unstyled">
-                <li class="item-list-a">
-                  <a href="{{('/aboutus')}}">Sobre Nosotros</a>
-                </li>
-              </ul>
+      
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
               La masía de Can Plans es una gran nave principal levantada sobre una gran piedra en la planta baja, con el suelo nivelado con losas del propio lugar.

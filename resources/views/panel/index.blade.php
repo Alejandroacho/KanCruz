@@ -10,7 +10,7 @@
             @inject('usuarios', 'App\User')
             <h3>{{$usuarios->count()}}</h3>
 
-            <p>Usuarios</p>
+            <p>Clientes</p>
           </div>
 
           <div class="icon">
@@ -36,17 +36,17 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-xs-6">
-        <div class="small-box bg-yellow">
+      <div class="col-lg-3 col-xs-6" >
+        <div class="small-box bg-yellow" >
           <div class="inner">
-            @inject('habitaciones', 'App\Room')
+            @inject('habitaciones', 'App\Room') 
 
            <h3>{{$habitaciones->count()}}<sup style="font-size: 20px"></sup></h3>
 
             <p>Habitaciones</p>
           </div>
           <div class="icon">
-            <i class="fa fa-bed"></i>
+          <i  class="fa fa-bed"></i></a> 
           </div>
           <a href="{{route('room.index')}}" class="small-box-footer">Mas informacion <i class="fa fa-arrow-circle-right"></i></a>
         </div>

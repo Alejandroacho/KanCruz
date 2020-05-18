@@ -15,8 +15,13 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="{{('/trial')}}">Home</a>
+            <a class="nav-link" href="{{('/trial')}}">Inicio</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{('/aboutus')}}">Sobre Nosotros</a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="{{route('trial.create')}}">Reservas</a>
           </li>

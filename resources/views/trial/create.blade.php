@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             
-                        <form action="{{Route('trial.store')}}" method="POST">
+                        <form action="{{Route('booking.store')}}" method="POST">
                     @csrf
                     
                     
@@ -66,6 +66,8 @@
                             <div class="form-group">
                                 <label>Fecha de entrada</label>
                                     <input type="date" name="checkin" class="form-control"/>
+                                    
+                            </div>
                             </div>
 
                             <div class="form-group">
@@ -73,6 +75,8 @@
                                     <input type="date" name="checkout" class="form-control"/>
                                     
                             </div>
+
+                            
 
                             <div class="form-group">
                                 <label>Desayuno</label>
@@ -83,6 +87,10 @@
                                 <label>Mascotas</label>
                                     <input type="checkbox" name="pets" id="pets" value="1" class="form-control"/>
                             </div>
+
+                            <div class="form-group">
+                
+                            
                             
                             <!--
                             <div class="input-group">

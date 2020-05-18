@@ -2,11 +2,19 @@
 
 @section('content')
 
+<section class="content container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        
+                        <h3 class="box-title">Haz una reserva</h3>
 
-    <div class="container">
-        <div class="col-xs-12">
-            <div class="box">
-                <form action="{{Route('booking.store')}}" method="POST">
+                    </div>
+
+                    <div class="box-body">
+
+                        <form action="{{Route('booking.store')}}" method="POST">
                     @csrf
                     
                     <div class="card text-white bg-dark mb-3">
@@ -16,11 +24,6 @@
                         </div>
 
                         <div class="box-body">
-
-                            <div class="form-group">
-                                <label>Id</label>
-                                    <input type="hidden" name="id" class="form-control"/>
-                            </div>
 
                             <div class="form-group">
                                 <label>Nombre</label>
@@ -39,43 +42,73 @@
 
                             <div class="form-group">
                                 <label>Email</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-at"></i>
+                                    </div>
                                     <input type="email" name="email" class="form-control"/>
+                                </div>
+                                
                             </div>
 
                             <div class="form-group">
                                 <label>Telefono</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
                                     <input type="phone" name="phone" class="form-control"/>
+                                </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="rooms_id">Elige la habitacion</label>
-                                <select name="rooms_id" id="rooms_id" class="form-control">
-                                @foreach ($rooms as $room)
-                                        <option value="{{$room->id}}">{{$room->name}}</option>
-                                    @endforeach
+                                <label for="room_id">Elige la habitacion</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-bed"></i>
+                                    </div>
+                                    <select name="room_id" id="room_id" class="form-control">
+                                        @foreach ($rooms as $room)
+                                            <option value="{{$room->id}}">{{$room->name}}</option>
+                                        @endforeach
                                 
-                                </select>
+                                    </select>
+                                </div>  
                             </div>
+
                             
+
                             <div class="form-group">
                                 <label>Fecha de entrada</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
                                     <input type="date" name="checkin" class="form-control"/>
+                                </div>
                             </div>
 
                             <div class="form-group">
-                                <label>Fecha de salida</label>
+                               <label>Fecha de salida</label> 
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
                                     <input type="date" name="checkout" class="form-control"/>
-                                    
+                                </div>
                             </div>
 
                             <div class="form-group">
                                 <label>Desayuno</label>
-                                    <input type="checkbox" name="breakfast" id="breakfast" value="1" class="form-control"/>
+                                
+                                <input type="checkbox" name="breakfast" id="breakfast" value="1"/>                                    
+                                    
+                                
                             </div>
 
                             <div class="form-group">
                                 <label>Mascotas</label>
-                                    <input type="checkbox" name="pets" id="pets" value="1" class="form-control"/>
+                                    <input type="checkbox" name="pets" id="pets" value="1"/>
                             </div>
                             
                             <!--
@@ -97,7 +130,9 @@
                         </div>
                     </div>    
                 </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 @endsection

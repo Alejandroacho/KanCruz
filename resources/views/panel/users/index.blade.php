@@ -25,8 +25,6 @@
             <li class="active">Pagina principal</li>
           </ol>
 
-          
-
         </section>
 
         @yield('content')

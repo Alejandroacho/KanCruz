@@ -63,7 +63,6 @@
                     <li>Calefacción</li>
                     <li>Acceso a internet</li>
                     <li>1 Cama matrimonial</li>
-                    <li></li>
                   </ul>
                 </div>
               </div>

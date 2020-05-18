@@ -21,7 +21,7 @@ class BookingSeeder extends Seeder
             'checkout' => '2020/05/30',
             'breakfast'=> '0',
             'pets'=> '0',
-            'rooms_id' => '1'
+            'room_id' => '1'
         ]);
 
         App\Booking::create([
@@ -34,7 +34,7 @@ class BookingSeeder extends Seeder
             'checkout' => '2020/05/15',
             'breakfast'=> '0',
             'pets'=> '0',
-            'rooms_id' => '2'
+            'room_id' => '2'
         ]);
 
         App\Booking::create([
@@ -47,7 +47,7 @@ class BookingSeeder extends Seeder
             'checkout' => '2020/05/18',
             'breakfast'=> '0',
             'pets'=> '0',
-            'rooms_id' => '3'
+            'room_id' => '3'
         ]);
 
         App\Booking::create([
@@ -60,7 +60,7 @@ class BookingSeeder extends Seeder
             'checkout' => '2020/05/24',
             'breakfast'=> '0',
             'pets'=> '0',
-            'rooms_id' => '1'
+            'room_id' => '1'
         ]);
 
     }

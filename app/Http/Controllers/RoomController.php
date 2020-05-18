@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Room;
+use App\Booking;
 use Illuminate\Http\Request;
 
 class RoomController extends Controller
@@ -27,7 +28,8 @@ class RoomController extends Controller
 
     public function show(Room $room)
     {
-        //
+        $bookings = Booking::all();
+        return view('room.show', compact ('bookings','room'));
     }
 
     public function edit(Room $room)

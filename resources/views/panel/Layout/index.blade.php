@@ -26,7 +26,7 @@
           </h1>
 
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+            <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
             @if(isset($urlActual))
               <li class="active">{{$urlActual}}</li>
             @else

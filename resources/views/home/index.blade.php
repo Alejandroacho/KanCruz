@@ -64,11 +64,12 @@
         </style>
     </head>
     <body>
+        
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ route('panel.index') }}">Inicio</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -81,13 +82,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Kan Cruz
+                    Can Cruz
                 </div>
+                
 
                 <div class="links">
-                    <a href="{{route('booking.index')}}">Bookings</a>
-                    <a href="{{route('client.index')}}">Clients</a>
-                    <a href="{{route('room.index')}}">Rooms</a>
+                    <a href="{{route('booking.index')}}">Reservas</a>
+                    <a href="{{route('client.index')}}">Clientes</a>
+                    <a href="{{route('room.index')}}">Habitaciones</a>
+                    <a href="{{route('trial.index')}}">Pagina Web</a>
+
 
                 </div>
             </div>

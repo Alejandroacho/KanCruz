@@ -20,8 +20,8 @@ class CreateBookingsTable extends Migration
             $table->date('checkout');
             $table->boolean('breakfast')->default(0);
             $table->boolean('pets')->default(0);
-            $table->foreignId('rooms_id');
-            $table->foreign('rooms_id')->references('id')->on('rooms');
+            $table->foreignId('room_id');
+            $table->foreign('room_id')->references('id')->on('rooms');
 
             //$table->integer('pets_number')->nullable();
             $table->timestamps();

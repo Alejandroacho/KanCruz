@@ -17,21 +17,19 @@ class BookingController extends Controller
     }
 
     public function create()
-    {    
-        $rooms = Room::all();
+    {        $rooms = Room::all();
         return view('booking.create', compact('rooms'))->with('success', 'Reserva creada satisfactoriamente');
     }
 
     public function store(Request $request)
     {
         Booking::create($request->all());
-        return redirect (route('booking.index'));
+        return redirect (route('trial.index'));
     }
 
     public function show(Booking $booking)
-    {   
-        $user = User::all();
-        return view('booking.show', compact ('booking', 'user'));
+    {   $rooms = Room::all();
+        return view('booking.show', compact ('booking','rooms'));
 
     }
 

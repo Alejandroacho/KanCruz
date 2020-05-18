@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Trial;
 use App\Room;
+use App\Booking;
 
 use Illuminate\Http\Request;
 
@@ -30,13 +31,12 @@ class TrialController extends Controller
     public function store(Request $request)
     {
         
-        Trial::create($request->all());
         return redirect (route('trial.index'));
     }
 
     public function show($id)
     {
-        //
+        
     }
 
     public function edit($id)

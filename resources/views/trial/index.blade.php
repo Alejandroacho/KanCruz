@@ -20,12 +20,18 @@
           <li class="nav-item">
             <a class="nav-link active" href="{{('/trial')}}">Inicio</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="{{route('trial.create')}}">Reservas</a>
+            <a class="nav-link" href="{{('/aboutus')}}">Sobre nosotros</a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="{{('/rooms')}}">Habitaciones</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('trial.create')}}">Reservas</a>
+          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="{{('/experiencias')}}">Experiencias</a>
           </li>
@@ -54,7 +60,7 @@
                        Habitaciones 
                       <br><span class="color-b">rústicas y confortables </span></h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="{{route('booking.create')}}"><span class="price-a">Reserva</span></a>
+                      <a href="{{route('trial.create')}}"><span class="price-a">Reserva</span></a>
                     </p>
                   </div>
                 </div>
@@ -76,7 +82,7 @@
                        Descubre el 
                       <br>Parque Natural del <span class="color-b">Montseny</span></h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="{{route('booking.create')}}"><span class="price-a">Reserva</span></a>
+                      <a href="{{route('trial.create')}}"><span class="price-a">Reserva</span></a>
                     </p>
                   </div>
                 </div>
@@ -98,7 +104,7 @@
                     Cocina <span class="color-b">ecológica </span>:
                     <br>De la <span class="color-b">huerta </span> al plato</h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="{{route('booking.create')}}"><span class="price-a">Reserva</span></a>
+                      <a href="{{route('trial.create')}}"><span class="price-a">Reserva</span></a>
                     </p>
                   </div>
                 </div>
@@ -170,6 +176,7 @@
                   <div class="testimonial-author-box">
                     <img src="assets/img/mini-testimonial-2.jpg" alt="" class="testimonial-avatar">
                     <h5 class="testimonial-author">David Cruz</h5>
+
                   </div>
                 </div>
               </div>
