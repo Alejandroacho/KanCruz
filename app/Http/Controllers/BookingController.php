@@ -34,7 +34,7 @@ class BookingController extends Controller
     }
 
     public function edit(Booking $booking)
-    {   
+    {
         $rooms = Room::all();
         return view('booking.edit', compact('booking', 'rooms'));
 
@@ -54,4 +54,9 @@ class BookingController extends Controller
 
     }
 
+    public function loadBookings()
+    {
+        $bookings = Booking::all()->toArray();
+        return response()->json($bookings);
+    }
 }

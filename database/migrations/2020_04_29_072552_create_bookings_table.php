@@ -6,18 +6,18 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateBookingsTable extends Migration
 {
-    // relacion con user (email, telefono, name) + relacion con habitación.
-    public function up() 
+    public function up()
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('title');
             $table->string('lastname');
             $table->string('document');
             $table->string('email');
             $table->string('phone');
-            $table->date('checkin');
-            $table->date('checkout');
+            $table->date('start');
+            $table->date('end');
             $table->boolean('breakfast')->default(0);
             $table->boolean('pets')->default(0);
             $table->foreignId('room_id');
@@ -28,7 +28,7 @@ class CreateBookingsTable extends Migration
         });
     }
 
-   
+
     public function down()
     {
         Schema::dropIfExists('bookings');
