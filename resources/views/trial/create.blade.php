@@ -10,17 +10,17 @@
                         <h1 class="title-single">Haz una reserva </h1>
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <div class="news-single nav-arrow-b">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            
+
                         <form action="{{Route('booking.store')}}" method="POST">
                     @csrf
-                    
-                    
+
+
                         <div class="box-body">
 
                             <div class="form-group">
@@ -31,16 +31,6 @@
                             <div class="form-group">
                                 <label>Nombre</label>
                                     <input type="text" name="name" class="form-control"/>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Apellido</label>
-                                    <input type="text" name="lastname" class="form-control"/>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Documento</label>
-                                    <input type="text" name="document" class="form-control"/>
                             </div>
 
                             <div class="form-group">
@@ -59,24 +49,23 @@
                                 @foreach ($rooms as $room)
                                         <option value="{{$room->id}}">{{$room->name}}</option>
                                     @endforeach
-                                
+
                                 </select>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label>Fecha de entrada</label>
                                     <input type="date" name="checkin" class="form-control"/>
-                                    
+
                             </div>
                             </div>
 
                             <div class="form-group">
                                 <label>Fecha de salida</label>
                                     <input type="date" name="checkout" class="form-control"/>
-                                    
+
                             </div>
 
-                            
 
                             <div class="form-group">
                                 <label>Desayuno</label>
@@ -89,16 +78,16 @@
                             </div>
 
                             <div class="form-group">
-                
-                            
-                            
+
+
+
                             <!--
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 <label>Mascotas</label>
                                     <div class="input-group-text">
                                     <input type="checkbox" aria-label="Checkbox for following text input" name="pets">
-                                
+
                                     </div>
                                 </div>
                                 <input type="number" class="form-control" aria-label="Text input with checkbox" name="pets_number">
@@ -109,7 +98,7 @@
                         <div class="card-footer">
                             <input type="submit" value="Crear" class="btn btn-primary">
                         </div>
-                    </div>    
+                    </div>
                 </form>
         </div>
     </section>

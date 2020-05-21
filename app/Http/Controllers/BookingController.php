@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Booking;
+use App\Client;
+use App\Service;
 use App\Room;
 use App\User;
 use Illuminate\Http\Request;
@@ -13,45 +15,54 @@ class BookingController extends Controller
     {
         $rooms = Room::all();
         $bookings = Booking::all();
-        return view ('booking.index', compact('bookings', 'rooms'));
+        $clients= Client::all();
+        $services= Service::all();
+        return view ('booking.index', compact('bookings', 'rooms','clients','services'));
     }
 
     public function create()
-    {        $rooms = Room::all();
-        return view('booking.create', compact('rooms'))->with('success', 'Reserva creada satisfactoriamente');
+    {
+        $rooms = Room::all();
+        $clients = Client::all();
+        $services= Service::all();
+        return view('booking.create', compact('rooms','clients','services'))->with('success', 'Reserva creada satisfactoriamente');
     }
 
     public function store(Request $request)
     {
-        Booking::create($request->all());
-        return redirect (route('trial.index'));
+        $booking=Booking::create($request->all());
+        $booking -> services()->sync($request->service_id);
+        $booking-> rooms()->sync($request->room_id);
+        return redirect (route('booking.index'));
     }
 
     public function show(Booking $booking)
-    {   $rooms = Room::all();
-        return view('booking.show', compact ('booking','rooms'));
-
+    {
+        $rooms = Room::all();
+        $clients = Client::all();
+        return view('booking.show', compact ('booking','rooms','clients'));
     }
 
     public function edit(Booking $booking)
-    {   
+    {
         $rooms = Room::all();
-        return view('booking.edit', compact('booking', 'rooms'));
-
+        $clients = Client::all();
+        $services= Service::all();
+        return view('booking.edit', compact('booking', 'rooms', 'clients', 'services'));
     }
 
     public function update(Request $request, Booking $booking)
     {
         $booking->update($request->all());
+        $booking -> services()->sync($request->service_id);
+        $booking-> rooms()->sync($request->room_id);
         return redirect(route('booking.index'))->with('success', 'Reserva medificada satisfactoriamente');
-
     }
 
     public function destroy(Booking $booking)
     {
         $booking->delete();
         return redirect(route('booking.index'))->with('success', 'Reserva eliminada satisfactoriamente');
-
     }
 
 }

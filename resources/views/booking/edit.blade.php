@@ -6,83 +6,64 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        
-                        <h3 class="box-title">Modifica la reserva</h3>
-
+                        <h3>Editar reserva #{{$booking->id}}</h3>
                     </div>
-
+                    <hr>
                     <div class="box-body">
-
-                        <form action="{{Route('booking.update', $booking->id)}}" method="POST">
+                        <form action="{{Route('booking.update',$booking->id)}}" method="POST">
                             @csrf
                             @method('put')
-
                             <div class="form-group">
-                                <label>Id</label>
-                                <input type="hidden" name="id" class="form-control" value="{{$booking->id}}"/>
+                                <label for="checkin">Check-in</label>
+                                <input type="text" name="checkin" class="form-control" value="{{$booking->checkin}}"/>
                             </div>
 
                             <div class="form-group">
-                                <label>Nombre</label>
-                                <input type="text" name="name" class="form-control "value="{{$booking->name}}"/>
+                                <label for="checkout">Check-in</label>
+                                <input type="text" name="checkout" class="form-control" value="{{$booking->checkout}}"/>
                             </div>
 
                             <div class="form-group">
-                                <label>Apellido</label>
-                                <input type="text" name="lastname" class="form-control" value="{{$booking->lastname}}"/>
+                                <label for="pax">PAX</label>
+                                <input type="text" name="pax" class="form-control" value="{{$booking->pax}}"/>
                             </div>
 
                             <div class="form-group">
-                                <label>Documento</label>
-                                <input type="text" name="document" class="form-control" value="{{$booking->document}}"/>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" name="email" class="form-control" value="{{$booking->email}}"/>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label>Telefono</label>
-                                <input type="phone" name="phone" class="form-control" value="{{$booking->phone}}"/>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="rooms_id">Elige la habitacion</label>
-                                <select name="rooms_id" id="rooms_id" class="form-control">
-                                    @foreach ($rooms as $room)
-                                        <option value="{{$room->id}}">{{$room->name}}</option>
+                                <label for="name">Cliente</label>
+                                <select name="client_id">
+                                    @foreach ( $clients as $client )
+                                        <option value="{{$client->id}}"> {{$client->name}} </option>
                                     @endforeach
-                                        
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label>Fecha de entrada</label>
-                                <input type="date" name="checkin" class="form-control" value="{{$booking->checkin}}"/>
+                                <label for="name">Servicios</label>
+                                    @foreach ( $services as $service )
+                                        <br>
+                                        <input type="checkbox" id="service_id" name="service_id[]" value="{{$service->id}}">
+                                        <label for="{{$service->id}}">{{$service->name}}</label>
+                                    @endforeach
                             </div>
 
                             <div class="form-group">
-                                <label>Fecha de salida</label>
-                                <input type="date" name="checkout" class="form-control" value="{{$booking->checkout}}"/>
+                                <label for="name">Habitaciones</label>
+                                    @foreach ( $rooms as $room )
+                                        <br>
+                                        <input type="checkbox" id="room_id" name="room_id[]" value="{{$room->id}}">
+                                        <label for="{{$room->id}}">{{$room->name}}</label>
+                                    @endforeach
                             </div>
 
-                            <div class="form-group">
-                                <label>Desayuno</label>
-                                <input type="checkbox" name="breakfast" value="{{$booking->breakfast}}"/>
-                            </div>
+                            <input type="submit" value="Actualizar" class="btn btn-primary">
 
-                            <div class="form-group">
-                                <label>Mascotas</label>
-                                <input type="checkbox" name="pets"  value="{{$booking->pets}}"/>
-                            </div>
-
-                            <div class="card-footer">
-                                <input type="submit" value="Actualizar" class="btn btn-primary">
-                            </div>
-                            
                         </form>
+
+                    </div>
+
+                    <hr>
+                    <div class="card-footer">
+                        <a href="{{Route('booking.index')}}" class="btn btn-light"><i class="fa fa-arrow-left">Volver</i></a>
                     </div>
                 </div>
             </div>

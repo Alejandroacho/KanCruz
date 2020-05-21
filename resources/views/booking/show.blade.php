@@ -6,31 +6,29 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                
-                    <h3 class="box-title">Numero de reserva: {{$booking->id}}</h3>
+                        <h1>Reserva #{{$booking->id}}</h1>
+                        <a href="{{Route('booking.edit', $booking->id)}}" class="btn btn-primary">Editar</a>
+                    </div>
+                    <hr>
+                    <div class="box-body">
+                        <h3>Cliente:</h3>
 
-                </div>
-           
-                <div class="box-body">
-                    <tr>
-                        <td>
-                            <ul class="list-group">
-                                <li class="list-group-item">Nombre: {{$booking->name}}</li> 
-                                <li class="list-group-item">Apellidos: {{$booking->lastname}}</li>
-                                <li class="list-group-item">Documento: {{$booking->document}}</li>  
-                                <li class="list-group-item">Email: {{$booking->email}}</li> 
-                                <li class="list-group-item">Telefono: {{$booking->phone}}</li>
-                                <li class="list-group-item">Habitacion:</li> 
-                                <li class="list-group-item">Fecha de entrada: {{$booking->checkin}}</li> 
-                                <li class="list-group-item">Fecha de salida: {{$booking->checkout}}</li> 
-                                <li class="list-group-item">Numero de huespedes:</li>
-                                <li class="list-group-item">Desayuno: {{$booking->breakfast}}</li> 
-                                <li class="list-group-item">Mascotas: {{$booking->pets}}</li> 
-                            </ul>
-                        </td>
-                    </tr>
+                        <a style="color:black" href="{{Route('client.show',$booking->client->id)}}" class="btn btn-warning" role="button">{{$booking->client->name}}</a>
+                        <h3>PAX:</h3>
+                        <h4>{{$booking->pax}}</h4>
+                        <h3>Check-in:</h3>
+                        <h4>{{$booking->checkin}}</h4>
+                        <h3>Check-out:</h3>
+                        <h4>{{$booking->checkout}}</h4>
+
+                    </div>
+
+                    <hr>
+                    <div class="card-footer">
+                        <a href="{{Route('booking.index')}}" class="btn btn-light">Volver</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
 @endsection

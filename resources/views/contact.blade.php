@@ -12,18 +12,6 @@
           <span class="color-text-a">Estamos aquí para ayudar. Si tienes alguna duda, pregunta, sugerencia o crítica no dudes en mandarnos un mail... Queremos brindarte el mejor servicio posible</span>
         </div>
       </div>
-      <div class="col-md-12 col-lg-4">
-        <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="{{('/trial')}}">Inicio</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Contacto
-            </li>
-          </ol>
-        </nav>
-      </div>
     </div>
   </div>
 </section><!-- End Intro Single-->
@@ -95,7 +83,7 @@
                   <p class="mb-1">Email .
                     <span class="color-a">cancruz@example.com</span>
                   </p>
-                
+
                   <p class="mb-1"> Telefono .
                     <span class=" color-a">+54 356 945234</span>
                   </p>

@@ -20,8 +20,6 @@
 
             @if(isset($urlActual))
               <small>{{$urlActual}}</small>
-            @else
-              <small>Pagina principal</small>
             @endif
           </h1>
 
@@ -32,10 +30,10 @@
             @else
               <li class="active">Pagina principal</li>
             @endif
-    
+
           </ol>
 
-          
+
 
         </section>
 

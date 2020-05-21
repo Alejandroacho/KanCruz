@@ -17,7 +17,7 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h1 class="box-title">Clientes</h1>
+                        <h1 class="box-title">Tags</h1>
                         <hr>
 
                         <div class="box-tools">
@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="box-title">
-                            <a href="{{Route('client.create')}}" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Nuevo cliente</a>
+                            <a href="{{Route('tag.create')}}" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Nuevo tag</a>
                         </div>
                     </div>
                     <br>
@@ -41,28 +41,27 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Nombre</th>
-                                    <th>Email</th>
-                                    <th>Número</th>
+                                    <th>Descripcion</th>
+
                                     <th colspan="3">Acciones</th>
 
                                 </tr>
-                                @foreach($clients as $client)
+                                @foreach($tags as $tag)
 
                                     <tr>
 
-                                        <td>{{$client->id}}</td>
-                                        <td>{{$client->name}}</td>
-                                        <td>{{$client->email}}</td>
-                                        <td>{{$client->phone}}</td>
+                                        <td>{{$tag->id}}</td>
+                                        <td>{{$tag->name}}</td>
+                                        <td>{{$tag->description}}</td>
                                         <td>
 
-                                            <a href="{{Route('client.show', $client->id)}}" class="btn btn-primary"><i class="fa fa-info"></i></a>
+                                            <a href="{{Route('tag.show', $tag->id)}}" class="btn btn-primary"><i class="fa fa-info"></i></a>
                                         </td>
                                         <td>
-                                            <a style="color:black" href="{{Route('client.edit',$client->id)}}" class="btn btn-warning" role="button"><i class="fa fa-edit"></i></a>
+                                            <a style="color:black" href="{{Route('tag.edit',$tag->id)}}" class="btn btn-warning" role="button"><i class="fa fa-edit"></i></a>
                                         </td>
                                         <td>
-                                            <form action="{{route('client.destroy', $client->id)}}" method="post">
+                                            <form action="{{route('tag.destroy', $tag->id)}}" method="post">
                                                 @csrf
                                                 @method('delete')
                                                     <input type="submit" value='X' class="btn btn-danger fa fa-trash" onclick="return confirm ('¿Estás seguro de eliminarlo?')">

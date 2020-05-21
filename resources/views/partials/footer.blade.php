@@ -7,7 +7,7 @@
             <div class="w-header-a">
               <h3 class="w-title-a text-brand">Quienes somos</h3>
             </div>
-      
+
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
               La masía de Can Plans es una gran nave principal levantada sobre una gran piedra en la planta baja, con el suelo nivelado con losas del propio lugar.
@@ -76,7 +76,7 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
           -->
-            Designed by <a href="https://bootstrapmade.com/">Stranger Strings</a>
+          Made with  <i class="fa fa-heart"></i>  by Stranger Strings!
           </div>
         </div>
       </div>

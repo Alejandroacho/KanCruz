@@ -11,18 +11,7 @@
               <h1 class="title-single">Parc Natural del Montseny Allotjament Rural </h1>
             </div>
           </div>
-          <div class="col-md-12 col-lg-4">
-            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="{{('/trial')}}">Inicio</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Sobre nosotros
-                </li>
-              </ol>
-            </nav>
-          </div>
+
         </div>
       </div>
     </section><!-- End Intro Single-->
@@ -39,7 +28,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-5 section-md-t3">
                     <div class="title-box-d">
-                        <h3 class="title-d">PROJECTE:</h3>
+                        <h3 class="title-d">PROYECTO:</h3>
                     </div>
                     <p class="color-text-a">
                     El projecte de recuperació de la Masia de Can Plans i el seu entorn s’ha fet amb l’antic principi de la masia, és a dir, amb  l’autogestió dels recursos propis i dels voltants. Però també tal com som ara al segle XXI: en versió “5.0”. aprofitant les noves tecnologies sense intervenir en la construcció original i preservant el medi. Respectant-los i  assegurant-ne la conservació, tot amb l’objectiu de garantir la millor convivència amb els seus habitants i els seus hostes.
@@ -48,7 +37,7 @@
 
                 <div class="col-md-6 col-lg-5 section-md-t3">
                     <div class="title-box-d">
-                        <h3 class="title-d">RECONSTRUCCIÓ</h3>
+                        <h3 class="title-d">RECONSTRUCCIÓN</h3>
                     </div>
                     <p class="color-text-a">
                     Totes les estances i actuacions re-constructives a l’edifici s’han fet amb materials de l’època: pedra, calç, bigues de fusta, terres hidràulics, entre d’altres. Elements recuperats principalment d’enderrocs i de la pedrera propera de pedra vermella del Figaró. Tractats amb vernissos i pintures a l’aigua, ecològics, amb absència de coles fenòliques i altres agents químics agressius. Tot per tal d’assolir una atmosfera el menys contaminada possible.
@@ -74,11 +63,11 @@
                 <div class="card-overlay card-overlay-hover">
                     <div class="card-body-d">
                         <p class="content-d color-text-a">
-                            ALIMENTS DE PRODUCCIÓ PROPIS I PROXIMITAT ECOLÒGICS: L’assortiment dels queviures en primer moment, i segons temporada, són les hortalisses i verdures que conreem al nostre hort, que produïm als corrals, així com la mel dels nostres camps.                 
+                            ALIMENTS DE PRODUCCIÓ PROPIS I PROXIMITAT ECOLÒGICS: L’assortiment dels queviures en primer moment, i segons temporada, són les hortalisses i verdures que conreem al nostre hort, que produïm als corrals, així com la mel dels nostres camps.
                         </p>
                     </div>
                 </div>
-                    
+
             </div>
           </div>
           <div class="col-md-4">
@@ -89,7 +78,7 @@
                 <div class="card-overlay card-overlay-hover">
                     <div class="card-body-d">
                         <p class="content-d color-text-a">
-                            Nogensmenys, ha estat de cabal importància l’aprovisionament energètic totalment sostenible de la masia: sol, aigua i vent. Energia elèctrica auto-produïda amb plaques fotovoltaiques i un aerogenerador. Calefacció i agua calenta amb placa termosolar i caldera de biomassa* 
+                            Nogensmenys, ha estat de cabal importància l’aprovisionament energètic totalment sostenible de la masia: sol, aigua i vent. Energia elèctrica auto-produïda amb plaques fotovoltaiques i un aerogenerador. Calefacció i agua calenta amb placa termosolar i caldera de biomassa*
                         </p>
                     </div>
                 </div>

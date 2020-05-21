@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Client;
 use Illuminate\Http\Request;
+use App\Booking;
 
 class ClientController extends Controller
 {
@@ -13,40 +14,41 @@ class ClientController extends Controller
         return view ('client.index', compact('clients'));
     }
 
-    
+
     public function create()
     {
         return view ('client.create');
     }
 
-   
+
     public function store(Request $request)
     {
         Client::create($request->all());
-        return redirect (route('client.index'));   
+        return redirect (route('client.index'));
     }
 
-   
+
     public function show(Client $client)
     {
-        return redirect(route('client.show', compact('client')));
+        $bookings=Booking::all();
+        return view('client.show', compact('client','bookings'));
 ;    }
 
-   
+
     public function edit(Client $client)
     {
-        return redirect(route('client.edit', compact('client')));
+        return view('client.edit', compact('client'));
     }
 
-    
+
     public function update(Request $request, Client $client)
     {
         $client->update($request->all());
-        return view (route('client.index'))->with('success', 'Datos del cliente modificados satisfactoriamente');
+        return redirect (route('client.index'));
 
     }
 
-    
+
     public function destroy(Client $client)
     {
         $client->delete();
