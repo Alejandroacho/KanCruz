@@ -6,7 +6,6 @@ use App\Booking;
 use App\Client;
 use App\Service;
 use App\Room;
-use App\Http\Resources\Booking as BookingResource;
 use App\Http\Resources\BookingCollection;
 
 use App\User;
@@ -26,7 +25,7 @@ class BookingController extends Controller
     public function create()
     {
         $rooms = Room::all();
-<<<<<<< HEAD
+
         $clients = Client::all();
         $services= Service::all();
         return view('booking.create', compact('rooms','clients','services'))->with('success', 'Reserva creada satisfactoriamente');
@@ -34,8 +33,8 @@ class BookingController extends Controller
 
     public function storefront(Request $request)
     {
-        $client=Client::create($request->input('name','email','phone'));
-        var_dump($client);
+        $client = Client::create($request->input('name','email','phone'));
+
         $booking=Booking::create($request->input('name','email','phone'));
 
         $client -> services()->sync($request->service_id);
@@ -45,9 +44,6 @@ class BookingController extends Controller
 
 
         return redirect (route('booking.index'));
-=======
-        return view('booking.create', compact('rooms'))->with('success', 'Reserva creada satisfactoriamente');
->>>>>>> Code review Calendar: unsuccessfully api route stuff
     }
 
     public function store(Request $request)
