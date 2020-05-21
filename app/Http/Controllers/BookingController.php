@@ -6,7 +6,7 @@ use App\Booking;
 use App\Client;
 use App\Service;
 use App\Room;
-use App\User;
+use App\Http\Resources\BookingCollection;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -26,6 +26,22 @@ class BookingController extends Controller
         $clients = Client::all();
         $services= Service::all();
         return view('booking.create', compact('rooms','clients','services'))->with('success', 'Reserva creada satisfactoriamente');
+    }
+
+    public function storefront(Request $request)
+    {
+        $client = Client::create($request->input('name','email','phone'));
+
+        $booking=Booking::create($request->input('name','email','phone'));
+
+        $client -> services()->sync($request->service_id);
+
+        $booking -> services()->sync($request->service_id);
+        $booking-> rooms()->sync($request->room_id);
+
+
+        return redirect (route('booking.index'));
+
     }
 
     public function store(Request $request)
@@ -65,4 +81,16 @@ class BookingController extends Controller
         return redirect(route('booking.index'))->with('success', 'Reserva eliminada satisfactoriamente');
     }
 
+    public function loadBookings()
+    {
+        $bookings = Booking::all();
+        return response()->json($bookings);
+    }
+
+    public function bookingData()
+    {
+        $bookings = Booking::all();
+
+        return new BookingCollection($bookings);
+    }
 }
