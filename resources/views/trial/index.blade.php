@@ -46,7 +46,7 @@
 <!-- exten -->
   <!-- ======= Intro Section ======= -->
   <div class="intro intro-carousel">
-    <div id="carousel" class="owl-carousel owl-theme">
+    <div id="carousel" class="owl-carousel">
       <div class="carousel-item-a intro-item bg-image" style="background-image: url(https://i.postimg.cc/1tfL54RG/can-plans.jpg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
@@ -119,7 +119,7 @@
   <main id="main">
 
     <!-- ======= Testimonials Section ======= -->
-    <section class="section-testimonials section-t8 nav-arrow-a">
+    <section class="section-testimonials section-t8">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -130,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div id="testimonial-carousel" class="owl-carousel owl-arrow">
+        <div id="testimonial-carousel" class="owl-carousel">
         <div class="carousel-item-a">
             <div class="testimonials-box">
               <div class="row">

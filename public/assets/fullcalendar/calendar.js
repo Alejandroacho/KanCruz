@@ -26,7 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 arg.draggedEl.parentNode.removeChild(arg.draggedEl);
             }
         },
-        events: routeBookings('routeLoadBookings')
+        events: [
+            {
+                "title": "Puiggracios",
+                "start": "2020-05-05",
+                "end": "2020-05-06"
+            }
+        ]
     });
 
     calendar.render();
