@@ -80,4 +80,9 @@ class BookingController extends Controller
         return redirect(route('booking.index'))->with('success', 'Reserva eliminada satisfactoriamente');
     }
 
+    public function loadBookings()
+    {
+        $bookings = Booking::all()->toArray();
+        return response()->json($bookings);
+    }
 }

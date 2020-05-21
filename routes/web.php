@@ -22,6 +22,12 @@ Route::get('calendar', function () {
     return view('calendar');
 });
 
+Route::get('/load-bookings', 'BookingController@loadBookings')->name('routeLoadBookings');
+
+Route::get('/availability', function(){
+    return view('calendar.main');
+});
+
 Route::resource('booking', 'BookingController');
 Route::resource('client', 'ClientController');
 Route::resource('room', 'RoomController');
