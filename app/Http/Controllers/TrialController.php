@@ -10,18 +10,12 @@ use Illuminate\Http\Request;
 
 class TrialController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view ('trial.index');
-
     }
 
-    
+
     public function create()
     {
         $rooms = Room::all();
@@ -30,13 +24,13 @@ class TrialController extends Controller
 
     public function store(Request $request)
     {
-        
+
         return redirect (route('trial.index'));
     }
 
     public function show($id)
     {
-        
+
     }
 
     public function edit($id)
@@ -49,15 +43,14 @@ class TrialController extends Controller
         //
     }
 
-    
+
     public function destroy($id)
     {
-        
+
     }
 
     public function view()
     {
-        return view ('trial.habitacion');
-
+        return view ('trial.view');
     }
 }

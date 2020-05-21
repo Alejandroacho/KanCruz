@@ -6,11 +6,11 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3>Crear nuevo cliente</h3>
+                    <h3>Crear nueva habitación</h3>
                 </div>
                 <hr>
                 <div class="card-body">
-                    <form action="{{Route('client.store')}}" method="POST">
+                    <form action="{{Route('tag.store')}}" method="POST">
                         @csrf
                         <div class="form-group">
                             <label for="name">Nombre</label>
@@ -18,22 +18,16 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" class="form-control"/>
+                            <label for="description">Descripción</label>
+                            <textarea name="description" class="form-control">Descripción del tag ...</textarea>
                         </div>
-
-                        <div class="form-group">
-                            <label for="phone">Numero</label>
-                            <input type="text" name="phone" class="form-control"/>
-                        </div>
-
 
                         <input type="submit" value="Add" class="btn btn-primary">
                     </form>
                 </div>
                 <hr>
                 <div class="card-footer">
-                    <a href="{{Route('client.index')}}" class="btn btn-light"><i class="fa fa-arrow-left">Volver</i></a>
+                    <a href="{{Route('tag.index')}}" class="btn btn-light"><i class="fa fa-arrow-left">Volver</i></a>
                 </div>
             </div>
         </div>

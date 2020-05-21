@@ -7,6 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Tag::class, function (Faker $faker) {
     return [
-        //
+        'name'=>$faker->numerify('Tag ##'),
+        'description'=>$faker->text($maxNbChars=25)
     ];
 });

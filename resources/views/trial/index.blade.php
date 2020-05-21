@@ -11,27 +11,27 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="{{('/trial')}}">Can <span class="color-b">Cruz</span></a>
+      <a class="navbar-brand text-brand" href="{{('')}}">Can <span class="color-b">Cruz</span></a>
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
       </button>
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="{{('/trial')}}">Inicio</a>
+            <a class="nav-link active" href="{{('/')}}">Inicio</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="{{('/aboutus')}}">Sobre nosotros</a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link" href="{{('/rooms')}}">Habitaciones</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('trial.create')}}">Reservas</a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link" href="{{('/experiencias')}}">Experiencias</a>
           </li>
@@ -57,7 +57,7 @@
                   <div class="intro-body">
                     <p class="intro-title-top">Nuestras estancias
                     <h1 class="intro-title mb-4">
-                       Habitaciones 
+                       Habitaciones
                       <br><span class="color-b">rústicas y confortables </span></h1>
                     <p class="intro-subtitle intro-price">
                       <a href="{{route('trial.create')}}"><span class="price-a">Reserva</span></a>
@@ -79,7 +79,7 @@
                   <div class="intro-body">
                     <p class="intro-title-top">El entorno
                     <h1 class="intro-title mb-4">
-                       Descubre el 
+                       Descubre el
                       <br>Parque Natural del <span class="color-b">Montseny</span></h1>
                     <p class="intro-subtitle intro-price">
                       <a href="{{route('trial.create')}}"><span class="price-a">Reserva</span></a>
@@ -117,7 +117,7 @@
   </div><!-- End Intro Section -->
 
   <main id="main">
-    
+
     <!-- ======= Testimonials Section ======= -->
     <section class="section-testimonials section-t8 nav-arrow-a">
       <div class="container">
@@ -145,7 +145,7 @@
                   </div>
                   <div class="testimonials-content">
                     <p class="testimonial-text">
-                      Tuve una experiencia maravillosa en ese paraje natural tan expectacular, la habitación era muy amplia y tambien me encantó correr detras de las gallinas. 
+                      Tuve una experiencia maravillosa en ese paraje natural tan expectacular, la habitación era muy amplia y tambien me encantó correr detras de las gallinas.
                     </p>
                   </div>
                   <div class="testimonial-author-box">
@@ -170,7 +170,7 @@
                   </div>
                   <div class="testimonials-content">
                     <p class="testimonial-text">
-                      La habitación era luminosa, rustica y muy acogedora. Incluso cuando me caí del caballo me senti feliz en aquel entorno. 
+                      La habitación era luminosa, rustica y muy acogedora. Incluso cuando me caí del caballo me senti feliz en aquel entorno.
                     </p>
                   </div>
                   <div class="testimonial-author-box">

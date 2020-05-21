@@ -6,27 +6,22 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3>Editar {{$client->name}}</h3>
+                        <h3>Editar {{$tag->name}}</h3>
                     </div>
                     <hr>
                     <div class="box-body">
-                        <form action="{{Route('client.update',$client->id)}}" method="POST">
+                        <form action="{{Route('tag.update',$tag->id)}}" method="POST">
                             @csrf
                             @method('put')
 
                             <div class="form-group">
                                 <label for="name">Nombre</label>
-                                <input type="text" name="name" class="form-control" value="{{$client->name}}">
+                                <input type="text" name="name" class="form-control" value="{{$tag->name}}">
                             </div>
 
                             <div class="form-group">
-                                <label for="name">Email</label>
-                                <input type="text" name="email" class="form-control" value="{{$client->email}}">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="name">Phone</label>
-                                <input type="text" name="phone" class="form-control" value="{{$client->phone}}">
+                                <label for="description">Descripción</label>
+                                <textarea name="description" class="form-control">{{$tag->description}}</textarea>
                             </div>
 
                             <input type="submit" value="Actualizar" class="btn btn-primary">
@@ -37,7 +32,7 @@
 
                     <hr>
                     <div class="card-footer">
-                        <a href="{{Route('client.index')}}" class="btn btn-light"><i class="fa fa-arrow-left">Volver</i></a>
+                        <a href="{{Route('tag.index')}}" class="btn btn-light"><i class="fa fa-arrow-left">Volver</i></a>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@
         <div class="card">
             <form action="{{Route('booking.store')}}" method="POST">
                 @csrf
-                
+
                 <div class="card text-black mb-3">
 
                     <div class="card-header">
@@ -25,16 +25,6 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Apellido</label>
-                                <input type="text" name="lastname" class="form-control"/>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Documento</label>
-                                <input type="text" name="document" class="form-control"/>
-                        </div>
-
-                        <div class="form-group">
                             <label>Email</label>
                                 <input type="email" name="email" class="form-control"/>
                         </div>
@@ -48,10 +38,9 @@
                             <label for="rooms_id">Elige la habitacion</label>
                             <select name="rooms_id" id="rooms_id" class="form-control">
                                     <option value=""></option>
-                            
                             </select>
                         </div>
-                        
+
                         <div class="form-group">
                             <label>Fecha de entrada</label>
                                 <input type="date" name="checkin" class="form-control"/>
@@ -60,7 +49,7 @@
                         <div class="form-group">
                             <label>Fecha de salida</label>
                                 <input type="date" name="checkout" class="form-control"/>
-                                
+
                         </div>
 
                         <div class="form-group">
@@ -78,7 +67,7 @@
                             @foreach ($rooms as $room)
                                     <option value="{{$room->id}}">{{$room->name}}</option>
                                 @endforeach
-                            
+
                             </select>
                         </div>
                         <!--
@@ -87,7 +76,7 @@
                             <label>Mascotas</label>
                                 <div class="input-group-text">
                                 <input type="checkbox" aria-label="Checkbox for following text input" name="pets">
-                               
+
                                 </div>
                             </div>
                             <input type="number" class="form-control" aria-label="Text input with checkbox" name="pets_number">
@@ -98,7 +87,7 @@
                     <div class="card-footer">
                         <input type="submit" value="Crear" class="btn btn-primary">
                     </div>
-                </div>    
+                </div>
             </form>
         </div>
     </div>

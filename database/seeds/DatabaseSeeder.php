@@ -11,7 +11,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(BookingSeeder::class);
+        factory(\App\User::class)->create(['name'=>'Alejandro Acho','email'=>'alejo@acho.com']);
+
+        $this->call(TagSeeder::class);
         $this->call(RoomSeeder::class);
+        $this->call(ServiceSeeder::class);
+        $this->call(ClientSeeder::class);
     }
 }

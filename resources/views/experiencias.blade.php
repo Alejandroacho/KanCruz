@@ -12,18 +12,7 @@
               <span class="color-text-a">Desconecta en un entorno inmejorable y un trato familiar</span>
             </div>
           </div>
-          <div class="col-md-12 col-lg-4">
-            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="#">Home</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Experiencias
-                </li>
-              </ol>
-            </nav>
-          </div>
+
         </div>
       </div>
     </section><!-- End Título -->
@@ -111,7 +100,7 @@
                     </ul>
                   </div>
                 </div>
-           
+
             </div> <!-- end of Overview -->
 
 <!-- ================== Description + Amenities ================ -->
@@ -154,22 +143,9 @@
                 </div>
               </div>
             </div>
-        </div> 
-    </div> 
-    
-
- <!-- end of description + amenities -->
-<!-- ========================= Ecologic food ========================== -->
-  <div class="col-md-12">
-    <div class="row section-t3">
-      <div class="col-sm-12">
-        <div class="title-box-d">
-          <h3 class="title-d">Cocina Ecólogica</h3>
         </div>
-      </div>
     </div>
-  </div>
-  </div>
-</div> 
+
+
 
 @endsection

@@ -6,24 +6,14 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h1>Habitación {{$room->name}}</h1>
+                        <h1>Servicio {{$service->name}}</h1>
                     </div>
                     <hr>
                     <div class="box-body">
                         <h3>Descripción:</h3>
-                        <h4>{{$room->description}}</h4>
-                        <h3>Pax:</h3>
-                        <h4>{{$room->pax}}<h4>
+                        <h4>{{$service->description}}</h4>
                         <h3>Precio:</h3>
-                        <h4>{{$room->price}}</h4>
-                        <h3>Disponibilidad:</h3>
-                        @if ($room->available==1)
-                            <h4>{{'Disponible'}}<h4>
-                        @endif
-
-                        @if ($room->available==0)
-                            <h4>{{'No disponible'}}<h4>
-                        @endif
+                        <h4>{{$service->price}}<h4>
                     </div>
 
                     <hr>
